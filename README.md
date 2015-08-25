@@ -1,5 +1,5 @@
-seneca-auth-restrict-login
-===========================
+auth-restrict-login
+====================
 
 [Seneca](http://senecajs.org) plugin for restrict login.
 
@@ -15,7 +15,7 @@ npm install seneca-auth-restrict-login
 
 ### Using restrict login plugin
 
-When using seneca-auth with seneca-auth-restrict-login:
+When using seneca-auth with auth-restrict-login:
 
 ```
 ..........

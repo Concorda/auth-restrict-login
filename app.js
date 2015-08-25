@@ -2,9 +2,7 @@
 
 var _ = require('lodash')
 
-module.exports = function ( options ) {
-  var seneca = this
-  var plugin = 'seneca-auth-restrict-login'
+module.exports = function ( seneca, options ) {
 
   function restrict_login(args, cb){
     var req = this.fixedargs.req$
@@ -19,7 +17,4 @@ module.exports = function ( options ) {
 
   seneca.add({role: 'auth', restrict: 'login'}, restrict_login)
 
-  return {
-    name:plugin
-  }
 }

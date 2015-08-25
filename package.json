@@ -1,7 +1,7 @@
 {
-  "name": "seneca-auth-restrict-login",
+  "name": "auth-restrict-login",
   "version": "0.0.1",
-  "description": "Seneca plugin for restrict auth login",
+  "description": "Seneca module for restrict auth login",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mirceaalexandru/seneca-auth-restrict-login"
+    "url": "https://github.com/mirceaalexandru/auth-restrict-login"
   },
   "files": [
     "LICENSE.txt",
@@ -28,9 +28,9 @@
     "url" : "https://github.com/mirceaalexandru"
   },
   "bugs": {
-    "url": "https://github.com/mirceaalexandru/seneca-auth-restrict-login"
+    "url": "https://github.com/mirceaalexandru/auth-restrict-login"
   },
-  "homepage": "https://github.com/mirceaalexandru/seneca-auth-restrict-login",
+  "homepage": "https://github.com/mirceaalexandru/auth-restrict-login",
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
