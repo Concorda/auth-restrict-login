@@ -2,7 +2,8 @@
 
 var _ = require('lodash')
 
-module.exports = function ( seneca, options ) {
+module.exports = function ( options ) {
+  var seneca = this
 
   function restrict_login(args, cb){
     var req = this.fixedargs.req$
