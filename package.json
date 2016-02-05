@@ -4,7 +4,10 @@
   "description": "Seneca module for restrict auth login",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lab -r console -v -L -m 3000",
+    "lint": "lab -dL",
+    "coverage": "lab -s test/*test.js  -r lcov | coveralls",
+    "annotate": "docco app.js -o doc"
   },
   "keywords": [
     "seneca",
@@ -15,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mirceaalexandru/auth-restrict-login"
+    "url": "https://github.com/senecajs/auth-restrict-login"
   },
   "files": [
     "LICENSE.txt",
@@ -24,16 +27,30 @@
   ],
   "author": {
     "name": "Mircea Alexandru",
-    "email":"mircea.alexandru@gmail.com",
-    "url" : "https://github.com/mirceaalexandru"
+    "email": "mircea.alexandru@gmail.com",
+    "url": "https://github.com/mirceaalexandru"
   },
+  "contributors": [
+    {
+      "name": "Cristian Kiss",
+      "email": "kissdevel@gmail.com",
+      "url": "https://github.com/ckiss"
+    }
+  ],
   "bugs": {
-    "url": "https://github.com/mirceaalexandru/auth-restrict-login"
+    "url": "https://github.com/senecajs/auth-restrict-login"
   },
-  "homepage": "https://github.com/mirceaalexandru/auth-restrict-login",
+  "homepage": "https://github.com/senecajs/auth-restrict-login",
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "lodash": "^3.10.0"
+  },
+  "devDependencies": {
+    "code": "2.x.x",
+    "docco": "0.x.x",
+    "eslint-config-seneca": "1.x.x",
+    "eslint-plugin-hapi": "4.x.x",
+    "eslint-plugin-standard": "1.x.x",
+    "lab": "8.x.x"
   }
 }
