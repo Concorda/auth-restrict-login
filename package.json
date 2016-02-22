@@ -1,6 +1,6 @@
 {
   "name": "auth-restrict-login",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Seneca module for restrict auth login",
   "main": "app.js",
   "scripts": {
